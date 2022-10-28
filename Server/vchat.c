@@ -36,12 +36,34 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 #define MAX_CLIENTS 100
 
 
-//Platform independet Functions 
+//Platform independet Functions and function definitions 
 void Function1(char* Input);
 void Function2(char* Input);
 void Function3(char* Input);
 void Function4(char* Input);
 void EssentialFunc1(); 
+
+
+
+void Function1(char* Input) {
+	char Buffer2S[140];
+	strcpy(Buffer2S, Input);
+}
+
+void Function2(char* Input) {
+	char Buffer2S[60];
+	strcpy(Buffer2S, Input);
+}
+
+void Function3(char* Input) {
+	char Buffer2S[2000];
+	strcpy(Buffer2S, Input);
+}
+
+void Function4(char* Input) {
+	char Buffer2S[1000];
+	strcpy(Buffer2S, Input);
+}
 
 #ifdef __Win32
 	#define _WIN32_WINNT 0x501
@@ -401,27 +423,6 @@ void EssentialFunc1();
 			return TRUE;
 		}
 		return FALSE;
-	}
-
-
-	void Function1(char* Input) {
-		char Buffer2S[140];
-		strcpy(Buffer2S, Input);
-	}
-
-	void Function2(char* Input) {
-		char Buffer2S[60];
-		strcpy(Buffer2S, Input);
-	}
-
-	void Function3(char* Input) {
-		char Buffer2S[2000];
-		strcpy(Buffer2S, Input);
-	}
-
-	void Function4(char* Input) {
-		char Buffer2S[1000];
-		strcpy(Buffer2S, Input);
 	}
 
 	//////////////////////////////////////////////////////////////

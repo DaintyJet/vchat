@@ -24,4 +24,5 @@ The *Mark* and *Copy* functionality of the console can still cause trouble if th
     2. Test windows compilation -- does it still work
     3. Add linux libraries to linux section (Equivalent to windows used)
     4. Replace Windows function calls
+    5. Compile and link essenfunc.dll, see the way it was originally implements 
     5. Test  
