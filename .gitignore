@@ -1,0 +1,5 @@
+# Ignore any vscode config file created
+.vscode
+
+#Ignore any object files created during compilation 
+*.o
