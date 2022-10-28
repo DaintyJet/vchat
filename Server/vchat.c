@@ -35,21 +35,19 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 #define DEFAULT_PORT "9999"
 #define MAX_CLIENTS 100
 
+
+//Platform independet Functions 
+void Function1(char* Input);
+void Function2(char* Input);
+void Function3(char* Input);
+void Function4(char* Input);
+void EssentialFunc1(); 
+
 #ifdef __Win32
-{
 	#define _WIN32_WINNT 0x501
 	#include <winsock2.h>
 	#include <windows.h>
 	#include <ws2tcpip.h>
-
-
-
-
-	void Function1(char* Input);
-	void Function2(char* Input);
-	void Function3(char* Input);
-	void Function4(char* Input);
-	void EssentialFunc1();
 
 	/* Client structure */
 	typedef struct {
@@ -746,10 +744,10 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 		return 0;
 	}
-}
+#endif
 #ifdef __linux__
-{
+
 	int main(int argc, char* argv) {
 		printf("Linux!");
 	}
-}
+#endif
